@@ -381,10 +381,10 @@ print(f"Best Model: {best_model_name}")
 print(f"Best Model Test MSE: {best_test_mse:.4f}, Best Model Test MAE: {best_test_mae:.4f}, Best Model Test R²: {best_test_r2:.4f}")
 
 # Save the best model using joblib for later use in predictions
-joblib.dump(best_model, 'best_model1.pkl')
-print("Best model saved as 'best_model1.pkl'.")
+joblib.dump(best_model, 'best_model.pkl')
+print("Best model saved as 'best_model.pkl'.")
 
 # Save the column names used in the model to ensure consistency during future predictions
 model_columns = list(X.columns)
-joblib.dump(model_columns, 'model_columns1.pkl')
-print("Model columns saved as 'model_columns1.pkl'.")
+joblib.dump(model_columns, 'model_columns.pkl')
+print("Model columns saved as 'model_columns.pkl'.")
